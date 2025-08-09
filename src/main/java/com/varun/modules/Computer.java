@@ -1,4 +1,4 @@
-package com.varun;
+package com.varun.modules;
 
 public interface Computer {
 

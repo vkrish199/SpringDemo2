@@ -1,22 +1,17 @@
 package com.varun.config;
 
 import com.varun.modules.Desktop;
-import com.varun.modules.Laptop;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class AppConfig {
+public class AppConfigScopeExample {
 
     @Bean
+    @Scope(value = "prototype")
     public Desktop desk() {
         return new Desktop();
-    }
-
-    @Bean(name = "my_laptop")
-    //multiple names can be specified like @Bean(name = {"my_laptop","custom_laptop"})
-    public Laptop lap() {
-        return new Laptop();
     }
 
 }

@@ -1,5 +1,8 @@
-package com.varun;
+package com.varun.modules;
 
+import org.springframework.stereotype.Component;
+
+@Component("lap")
 public class Laptop implements Computer {
 
     public Laptop() {
